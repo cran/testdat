@@ -68,6 +68,7 @@ expect_unique <- function(vars,
                           flt = TRUE,
                           data = get_testdata()) {
 
+  check_expect_data_pipe(enquo(vars))
   act <- quasi_label(enquo(data))
   act$var_desc <- as_label_vars(enquo(vars))
   act$flt_desc <- as_label_flt(enquo(flt))
@@ -79,7 +80,7 @@ expect_unique <- function(vars,
     mutate(count = n()) %>%
     ungroup() %>%
     select({{ vars }}, count) %>%
-    filter(across(-count, ~ !.x %in% exclude))
+    filter(if_all(-count, ~ !.x %in% exclude))
 
   act$result <- act$result_data$count == 1
 
@@ -103,6 +104,7 @@ expect_unique_across <- function(vars,
                                  flt = TRUE,
                                  data = get_testdata()) {
 
+  check_expect_data_pipe(enquo(vars))
   act <- quasi_label(enquo(data))
   act$var_desc <- as_label_vars(enquo(vars))
   act$flt_desc <- as_label_flt(enquo(flt))
@@ -135,6 +137,7 @@ expect_unique_combine <- function(vars,
                                   flt = TRUE,
                                   data = get_testdata()) {
 
+  check_expect_data_pipe(enquo(vars))
   act <- quasi_label(enquo(data))
   act$var_desc <- as_label_vars(enquo(vars))
   act$flt_desc <- as_label_flt(enquo(flt))

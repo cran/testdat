@@ -1,7 +1,7 @@
 Type: Package
 Package: testdat
 Title: Data Unit Testing for R
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: 
     c(person(given = "Danny",
              family = "Smith",
@@ -34,10 +34,10 @@ Collate: 'chk-filter.R' 'chk.R' 'comparison.R' 'deprec-chk.R'
         'expectation.R' 'reporter-excel.R' 'reporter-zzz.R'
         'testdat-package.R' 'utils.R' 'zzz.R'
 NeedsCompilation: no
-Packaged: 2021-11-12 04:07:28 UTC; danny
+Packaged: 2022-01-04 08:15:19 UTC; danny
 Author: Danny Smith [aut, cre],
   Kinto Behr [aut],
   The Social Research Centre [cph]
 Maintainer: Danny Smith <danny@gorcha.org>
 Repository: CRAN
-Date/Publication: 2021-11-12 10:10:02 UTC
+Date/Publication: 2022-01-04 12:50:02 UTC
