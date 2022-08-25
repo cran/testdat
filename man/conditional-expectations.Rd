@@ -50,14 +50,14 @@ These functions test whether multiple conditions coexist.
 }
 \section{Functions}{
 \itemize{
-\item \code{expect_cond}: Checks the coexistence of two
+\item \code{expect_cond()}: Checks the coexistence of two
 conditions. It can be read as "if \code{cond1} then \code{cond2}".
 
-\item \code{expect_base}: A special case that checks missing data
+\item \code{expect_base()}: A special case that checks missing data
 against a specified condition. It can be read as "if \code{base} then \code{var} not
 missing, if not \code{base} then \code{var} missing".
-}}
 
+}}
 \examples{
 my_survey <- data.frame(
   resp_id = 1:5,
@@ -82,6 +82,7 @@ Other data expectations:
 \code{\link{datacomp-expectations}},
 \code{\link{date-expectations}},
 \code{\link{exclusivity-expectations}},
+\code{\link{expect_depends}()},
 \code{\link{generic-expectations}},
 \code{\link{label-expectations}},
 \code{\link{pattern-expectations}},

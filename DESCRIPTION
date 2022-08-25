@@ -1,7 +1,7 @@
 Type: Package
 Package: testdat
 Title: Data Unit Testing for R
-Version: 0.4.0
+Version: 0.4.1
 Authors@R: 
     c(person(given = "Danny",
              family = "Smith",
@@ -25,19 +25,19 @@ Imports: dplyr (>= 0.8.0), glue, lifecycle, rlang, stringr, tidyselect
 Suggests: covr, crayon, knitr, labelled, lubridate, openxlsx, rmarkdown
 VignetteBuilder: knitr
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Collate: 'chk-filter.R' 'chk.R' 'comparison.R' 'deprec-chk.R'
-        'deprec-expect.R' 'deprec-reporter.R' 'expect-make.R'
-        'expect-chk.R' 'expect-conditional.R' 'expect-data.R'
-        'expect-datacomp.R' 'expect-exclusive.R' 'expect-generic.R'
-        'expect-labels.R' 'expect-proportion.R' 'expect-unique.R'
-        'expectation.R' 'reporter-excel.R' 'reporter-zzz.R'
-        'testdat-package.R' 'utils.R' 'zzz.R'
+        'deprec-expect.R' 'deprec-reporter.R' 'expectation.R'
+        'expect-generic.R' 'expect-make.R' 'expect-chk.R'
+        'expect-conditional.R' 'expect-data.R' 'expect-datacomp.R'
+        'expect-exclusive.R' 'expect-labels.R' 'expect-proportion.R'
+        'expect-unique.R' 'expect_depends.R' 'reporter-excel.R'
+        'reporter-zzz.R' 'testdat-package.R' 'utils.R' 'zzz.R'
 NeedsCompilation: no
-Packaged: 2022-01-04 08:15:19 UTC; danny
+Packaged: 2022-08-25 02:36:12 UTC; danny
 Author: Danny Smith [aut, cre],
   Kinto Behr [aut],
   The Social Research Centre [cph]
 Maintainer: Danny Smith <danny@gorcha.org>
 Repository: CRAN
-Date/Publication: 2022-01-04 12:50:02 UTC
+Date/Publication: 2022-08-25 02:50:02 UTC
