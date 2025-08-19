@@ -1,4 +1,4 @@
-## ---- echo = FALSE, warning = FALSE, message = FALSE--------------------------
+## ----echo = FALSE, warning = FALSE, message = FALSE---------------------------
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>", error = TRUE)
 options(tibble.print_min = 4L, tibble.print_max = 4L)
 library(testdat)

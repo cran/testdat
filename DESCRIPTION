@@ -1,7 +1,7 @@
 Type: Package
 Package: testdat
 Title: Data Unit Testing for R
-Version: 0.4.2
+Version: 0.4.3
 Authors@R: 
     c(person(given = "Danny",
              family = "Smith",
@@ -25,7 +25,7 @@ Imports: dplyr (>= 0.8.0), glue, lifecycle, rlang, stringr, tidyselect
 Suggests: covr, crayon, knitr, labelled, lubridate, openxlsx, rmarkdown
 VignetteBuilder: knitr
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Collate: 'chk-filter.R' 'chk.R' 'comparison.R' 'deprec-chk.R'
         'deprec-expect.R' 'deprec-reporter.R' 'expectation.R'
         'expect-generic.R' 'expect-make.R' 'expect-chk.R'
@@ -34,10 +34,10 @@ Collate: 'chk-filter.R' 'chk.R' 'comparison.R' 'deprec-chk.R'
         'expect-unique.R' 'expect_depends.R' 'reporter-excel.R'
         'reporter-zzz.R' 'testdat-package.R' 'utils.R' 'zzz.R'
 NeedsCompilation: no
-Packaged: 2023-09-03 23:49:23 UTC; danny.smith
+Packaged: 2025-08-01 07:39:48 UTC; danny
 Author: Danny Smith [aut, cre],
   Kinto Behr [aut],
   The Social Research Centre [cph]
 Maintainer: Danny Smith <danny@gorcha.org>
 Repository: CRAN
-Date/Publication: 2023-09-04 00:10:02 UTC
+Date/Publication: 2025-08-19 04:30:02 UTC
