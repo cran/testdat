@@ -1,7 +1,7 @@
-6f4078ab7506d440e6cd7f263ef5e1ee *DESCRIPTION
+14705eb2749ab6a51238e91f0baefa8b *DESCRIPTION
 25d760c2f89da4da684ff3b81d6f79eb *LICENSE
-971359704a34c93a2068793abf9540a1 *NAMESPACE
-47c2f9600f939b179efa4669b62ca217 *NEWS.md
+47536d8bba8b3f0aec70a04a3f06ca56 *NAMESPACE
+16e3025b33f6fd6d72797aba43b5d468 *NEWS.md
 8bdb7d7eb517f9e1d8df268eebfdbe2a *R/chk-filter.R
 c741b792df6619fb5a59da7c683891d1 *R/chk.R
 f9300e115096652d30e8df352cd17085 *R/comparison.R
@@ -19,7 +19,7 @@ d49e162422d79723bf3531997530a014 *R/expect-make.R
 77b33cf621ab88da5f8a50b3c345df4c *R/expect-proportion.R
 336a2f57aa6145f42f43fc2f7331ae2a *R/expect-unique.R
 4bf4491bba85f5529c4267f2a41b703f *R/expect_depends.R
-0776b511a6a924a49a14ea4c03cb6b6d *R/expectation.R
+9773bc5c7486f9efbed5891b6a7956d8 *R/expectation.R
 7890e6dcb6ff77e3001cc359373836b9 *R/reporter-excel.R
 b642a640cdd8065344baf075c0b8e561 *R/reporter-zzz.R
 f76376e9a83fee57561ad09e23526bf9 *R/testdat-package.R
@@ -29,7 +29,7 @@ e6db20cc3a33ade43c7de5ecd049e244 *README.md
 599a998895d6c015fdb33fca8a4d456b *build/vignette.rds
 a376c42a497022ef954457f50d9f35e9 *inst/doc/testdat.R
 733bd5d71f252163204f10404440ecbe *inst/doc/testdat.Rmd
-794c12701dff9268849993d205c62a6e *inst/doc/testdat.html
+ec1b1bf12b6982dfd51b6397b13057f6 *inst/doc/testdat.html
 3f8061a06e435e948dc23f86e90493d8 *inst/test-testdat_example_test.R
 b419fbd08b6a6846530befe5fef614c3 *man/chk-dates.Rd
 9204d5f1bf4327d42d92929e13e34113 *man/chk-defunct.Rd

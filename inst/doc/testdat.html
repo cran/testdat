@@ -391,7 +391,7 @@ selections</a>.</li>
 <span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="co">#&gt; `storms` has 48 duplicate records on variable `name, year, month, day, hour`.</span></span>
 <span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a><span class="co">#&gt; Filter: None</span></span>
 <span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span></code></pre></div>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 0 successes.</span></span></code></pre></div>
 <ul>
 <li><code>var</code> requires an unquoted variable name. This only
 applies to a small number of expectations.</li>
@@ -408,7 +408,7 @@ applies to a small number of expectations.</li>
 <span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="co">#&gt;  3.   │ └─rlang::eval_bare(expr, quo_get_env(quo))</span></span>
 <span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="co">#&gt;  4.   └─testdat::get_testdata()</span></span>
 <span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span></code></pre></div>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 0 successes.</span></span></code></pre></div>
 </div>
 <div id="filter" class="section level3">
 <h3>Filter</h3>
@@ -425,7 +425,7 @@ masking</a>. Only rows where the condition evaluates to
 <span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co">#&gt; Filter: None</span></span>
 <span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">#&gt; Arguments: `min = 0, max = 1`</span></span>
 <span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 0 successes.</span></span>
 <span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a></span>
 <span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="fu">test_that</span>(<span class="st">&quot;iris range checks filtered&quot;</span>, {</span>
 <span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a>  <span class="co"># Test passes for setosa rows</span></span>
@@ -439,7 +439,7 @@ masking</a>. Only rows where the condition evaluates to
 <span id="cb4-21"><a href="#cb4-21" tabindex="-1"></a><span class="co">#&gt; Filter: `Species == &quot;setosa&quot;`</span></span>
 <span id="cb4-22"><a href="#cb4-22" tabindex="-1"></a><span class="co">#&gt; Arguments: `min = 0, max = 0.5`</span></span>
 <span id="cb4-23"><a href="#cb4-23" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb4-24"><a href="#cb4-24" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span></code></pre></div>
+<span id="cb4-24"><a href="#cb4-24" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 1 success.</span></span></code></pre></div>
 </div>
 <div id="data" class="section level3">
 <h3>Data</h3>
@@ -458,9 +458,9 @@ ways:</p>
 <span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>  <span class="fu">expect_cond</span>(Species <span class="sc">%in%</span> <span class="st">&quot;versicolor&quot;</span>, Sepal.Length <span class="sc">&gt;=</span> <span class="dv">5</span>)</span>
 <span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>})</span>
 <span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="co">#&gt; ── Failure: Versicolor has sepal length greater than 5 - will fail ─────────────</span></span>
-<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="co">#&gt; get_testdata() failed consistency check. 1 cases have `Species %in% &quot;versicolor&quot;` but not `Sepal.Length &gt;= 5`.</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="co">#&gt; `get_testdata()` failed consistency check. 1 cases have `Species %in% &quot;versicolor&quot;` but not `Sepal.Length &gt;= 5`.</span></span>
 <span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span></code></pre></div>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 0 successes.</span></span></code></pre></div>
 <ul>
 <li>Using the <code>with_testdata()</code> wrapper to temporarily set
 the global test data for a block of code.</li>
@@ -475,9 +475,9 @@ the global test data for a block of code.</li>
 <span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a>  })</span>
 <span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a>})</span>
 <span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt; ── Failure: Versicolor has sepal length greater than 5 - will fail ─────────────</span></span>
-<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt; get_testdata() failed consistency check. 1 cases have `Species %in% &quot;versicolor&quot;` but not `Sepal.Length &gt;= 5`.</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt; `get_testdata()` failed consistency check. 1 cases have `Species %in% &quot;versicolor&quot;` but not `Sepal.Length &gt;= 5`.</span></span>
 <span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span>
+<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 0 successes.</span></span>
 <span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a></span>
 <span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a><span class="fu">identical</span>(<span class="fu">get_testdata</span>(), mtcars)</span>
 <span id="cb6-16"><a href="#cb6-16" tabindex="-1"></a><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
@@ -488,7 +488,7 @@ the global test data for a block of code.</li>
 <span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="co">#&gt; ── Failure: Versicolor has sepal length greater than 5 - will fail ─────────────</span></span>
 <span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="co">#&gt; `iris` failed consistency check. 1 cases have `Species %in% &quot;versicolor&quot;` but not `Sepal.Length &gt;= 5`.</span></span>
 <span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span></code></pre></div>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 0 successes.</span></span></code></pre></div>
 <p>By default, <code>set_testdata()</code> stores a quosure with a
 reference to the provided data frame rather than the data itself, so
 changes made to the data frame will be reflected in the test
@@ -512,7 +512,7 @@ results.</p>
 <span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a><span class="co">#&gt; 1     1     1</span></span>
 <span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a><span class="co">#&gt; 2     0     1</span></span>
 <span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a><span class="fu">expect_base</span>(y, x <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a><span class="co">#&gt; Error: get_testdata() has a base mismatch in variable `y`.</span></span>
+<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a><span class="co">#&gt; Error: `get_testdata()` has a base mismatch in variable `y`.</span></span>
 <span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a><span class="co">#&gt; 0 cases have `x == 1` but `y` is missing.</span></span>
 <span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a><span class="co">#&gt; 1 cases do not have `x == 1` but `y` is non missing.</span></span></code></pre></div>
 </div>
@@ -681,18 +681,18 @@ exercise.</p>
 <span id="cb10-24"><a href="#cb10-24" tabindex="-1"></a>    <span class="fu">expect_base</span>(nsw_only, state <span class="sc">==</span> <span class="st">&quot;NSW&quot;</span>)</span>
 <span id="cb10-25"><a href="#cb10-25" tabindex="-1"></a>  })</span>
 <span id="cb10-26"><a href="#cb10-26" tabindex="-1"></a>})</span>
-<span id="cb10-27"><a href="#cb10-27" tabindex="-1"></a><span class="co">#&gt; Test passed 🥇</span></span>
+<span id="cb10-27"><a href="#cb10-27" tabindex="-1"></a><span class="co">#&gt; Test passed with 1 success 🥇.</span></span>
 <span id="cb10-28"><a href="#cb10-28" tabindex="-1"></a><span class="co">#&gt; ── Failure: variable values are correct ────────────────────────────────────────</span></span>
-<span id="cb10-29"><a href="#cb10-29" tabindex="-1"></a><span class="co">#&gt; get_testdata() has 1 records failing value check on variable `pcode`.</span></span>
+<span id="cb10-29"><a href="#cb10-29" tabindex="-1"></a><span class="co">#&gt; `get_testdata()` has 1 records failing value check on variable `pcode`.</span></span>
 <span id="cb10-30"><a href="#cb10-30" tabindex="-1"></a><span class="co">#&gt; Variable set: `pcode`</span></span>
 <span id="cb10-31"><a href="#cb10-31" tabindex="-1"></a><span class="co">#&gt; Filter: None</span></span>
 <span id="cb10-32"><a href="#cb10-32" tabindex="-1"></a><span class="co">#&gt; Arguments: `&lt;int: 2000L, 2001L, 2002L, 2003L, 2004L, ...&gt;, &lt;int: 3000L, 3001L, 3002L,`</span></span>
-<span id="cb10-33"><a href="#cb10-33" tabindex="-1"></a><span class="co">#&gt; get_testdata() has 1 records failing value check on variable `pcode`.</span></span>
+<span id="cb10-33"><a href="#cb10-33" tabindex="-1"></a><span class="co">#&gt; `get_testdata()` has 1 records failing value check on variable `pcode`.</span></span>
 <span id="cb10-34"><a href="#cb10-34" tabindex="-1"></a><span class="co">#&gt; Variable set: `pcode`</span></span>
 <span id="cb10-35"><a href="#cb10-35" tabindex="-1"></a><span class="co">#&gt; Filter: None</span></span>
 <span id="cb10-36"><a href="#cb10-36" tabindex="-1"></a><span class="co">#&gt; Arguments: `  3003L, 3004L, ...&gt;, miss = &lt;chr: NA, &quot;&quot;&gt;`</span></span>
 <span id="cb10-37"><a href="#cb10-37" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb10-38"><a href="#cb10-38" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span>
+<span id="cb10-38"><a href="#cb10-38" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 2 successes.</span></span>
 <span id="cb10-39"><a href="#cb10-39" tabindex="-1"></a></span>
 <span id="cb10-40"><a href="#cb10-40" tabindex="-1"></a>x <span class="ot">&lt;-</span> x <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">market =</span> <span class="fu">case_when</span>(pcode <span class="sc">%in%</span> <span class="dv">2000</span><span class="sc">:</span><span class="dv">2999</span> <span class="sc">~</span> <span class="dv">1</span>,</span>
 <span id="cb10-41"><a href="#cb10-41" tabindex="-1"></a>                                     pcode <span class="sc">%in%</span> <span class="dv">3000</span><span class="sc">:</span><span class="dv">3999</span> <span class="sc">~</span> <span class="dv">2</span>))</span>
@@ -703,12 +703,12 @@ exercise.</p>
 <span id="cb10-46"><a href="#cb10-46" tabindex="-1"></a>  })</span>
 <span id="cb10-47"><a href="#cb10-47" tabindex="-1"></a>})</span>
 <span id="cb10-48"><a href="#cb10-48" tabindex="-1"></a><span class="co">#&gt; ── Failure: market derived correctly ───────────────────────────────────────────</span></span>
-<span id="cb10-49"><a href="#cb10-49" tabindex="-1"></a><span class="co">#&gt; get_testdata() has 1 records failing value check on variable `market`.</span></span>
+<span id="cb10-49"><a href="#cb10-49" tabindex="-1"></a><span class="co">#&gt; `get_testdata()` has 1 records failing value check on variable `market`.</span></span>
 <span id="cb10-50"><a href="#cb10-50" tabindex="-1"></a><span class="co">#&gt; Variable set: `market`</span></span>
 <span id="cb10-51"><a href="#cb10-51" tabindex="-1"></a><span class="co">#&gt; Filter: None</span></span>
 <span id="cb10-52"><a href="#cb10-52" tabindex="-1"></a><span class="co">#&gt; Arguments: `&lt;int: 1L, 2L&gt;, miss = NULL`</span></span>
 <span id="cb10-53"><a href="#cb10-53" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb10-54"><a href="#cb10-54" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span></code></pre></div>
+<span id="cb10-54"><a href="#cb10-54" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 0 successes.</span></span></code></pre></div>
 <p>Note that:</p>
 <ul>
 <li><p>The global test data can be set with <code>set_testdata()</code>
@@ -737,15 +737,15 @@ testdat, each file should have a test data set specified with a call to
 <span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="fu">test_that</span>(<span class="st">&quot;Variable format checks&quot;</span>, {</span>
 <span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>  <span class="fu">expect_regex</span>(Species, <span class="st">&quot;^[a-z]+$&quot;</span>)</span>
 <span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>})</span>
-<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a><span class="co">#&gt; Test passed 🌈</span></span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a><span class="co">#&gt; Test passed with 1 success 😸.</span></span>
 <span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a></span>
 <span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a><span class="fu">test_that</span>(<span class="st">&quot;Versicolor has sepal length greater than 5 - will fail&quot;</span>, {</span>
 <span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a>  <span class="fu">expect_cond</span>(Species <span class="sc">%in%</span> <span class="st">&quot;versicolor&quot;</span>, Sepal.Length <span class="sc">&gt;=</span> <span class="dv">5</span>)</span>
 <span id="cb11-10"><a href="#cb11-10" tabindex="-1"></a>})</span>
 <span id="cb11-11"><a href="#cb11-11" tabindex="-1"></a><span class="co">#&gt; ── Failure: Versicolor has sepal length greater than 5 - will fail ─────────────</span></span>
-<span id="cb11-12"><a href="#cb11-12" tabindex="-1"></a><span class="co">#&gt; get_testdata() failed consistency check. 1 cases have `Species %in% &quot;versicolor&quot;` but not `Sepal.Length &gt;= 5`.</span></span>
+<span id="cb11-12"><a href="#cb11-12" tabindex="-1"></a><span class="co">#&gt; `get_testdata()` failed consistency check. 1 cases have `Species %in% &quot;versicolor&quot;` but not `Sepal.Length &gt;= 5`.</span></span>
 <span id="cb11-13"><a href="#cb11-13" tabindex="-1"></a><span class="co">#&gt; Error:</span></span>
-<span id="cb11-14"><a href="#cb11-14" tabindex="-1"></a><span class="co">#&gt; ! Test failed</span></span></code></pre></div>
+<span id="cb11-14"><a href="#cb11-14" tabindex="-1"></a><span class="co">#&gt; ! Test failed with 1 failure and 0 successes.</span></span></code></pre></div>
 </div>
 </div>
 

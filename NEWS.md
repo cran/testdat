@@ -1,3 +1,7 @@
+# testdat 0.4.4
+
+* Expectations are now created using `new_expectation()` to prepare for upcoming changes in testthat 3.3.0 (#78, @hadley).
+
 # testdat 0.4.3
 
 * `expect_base()` now errors when `var` doesn't exist in the test data instead of passing (#71, @lachlangh).
